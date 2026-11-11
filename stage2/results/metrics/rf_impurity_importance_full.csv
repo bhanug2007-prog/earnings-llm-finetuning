@@ -1,0 +1,34 @@
+feature,impurity_importance
+ret_qqq_1w,0.0711995732127574
+ret_dow_1w,0.061909873841069864
+g_cash_and_equivalents,0.060685417535312314
+eps_surprise,0.06031700601568059
+ret_spy_1w,0.059403973304233006
+g_shareholders_equity,0.05922968420198854
+g_total_assets,0.05829936652358041
+g_net_income,0.05789283403889581
+g_revenue,0.05737699459210212
+g_capital_expenditure,0.057131188419148514
+ret_stock_1w,0.057114451468825135
+g_operating_cash_flow,0.05661574341135419
+g_free_cash_flow,0.055661678893437185
+g_operating_income,0.05255173985533385
+g_eps_diluted,0.051523484192792554
+g_total_liabilities,0.0455449213616907
+g_gross_profit,0.03056084070674028
+analyst_grade=buy,0.007135956307986874
+analyst_grade=hold,0.005464916484142009
+missing: g_total_liabilities,0.005451311268191269
+missing: g_gross_profit,0.005400272897323533
+analyst_grade=none,0.004530007899710542
+missing: g_operating_income,0.004235318638449751
+missing: g_eps_diluted,0.0038973953941904373
+missing: g_capital_expenditure,0.0026527969092843178
+missing: g_free_cash_flow,0.0024300630946710333
+analyst_grade=sell,0.0018798885811079637
+missing: g_cash_and_equivalents,0.0015347455546465842
+missing: g_revenue,0.0010436967968262434
+missing: g_net_income,0.0006103043442239018
+missing: g_total_assets,0.0003439106687824316
+missing: g_operating_cash_flow,0.00028127174931552227
+missing: g_shareholders_equity,8.937183620516797e-05

@@ -1,0 +1,25 @@
+feature,impurity_importance
+g_shareholders_equity,0.0931759061264971
+g_free_cash_flow,0.09043233008487818
+g_operating_income,0.09008840406973728
+g_revenue,0.08774949789013364
+g_cash_and_equivalents,0.0870917250733648
+g_capital_expenditure,0.08568031176735288
+g_net_income,0.08039629309868233
+g_eps_diluted,0.07766115769668563
+g_operating_cash_flow,0.07741877149292135
+g_total_assets,0.07405617434450942
+g_total_liabilities,0.06258226323760642
+g_gross_profit,0.0493032003434201
+missing: g_eps_diluted,0.006214811672093186
+missing: g_total_liabilities,0.0060107859003378115
+missing: g_gross_profit,0.0059580827030300985
+missing: g_net_income,0.004656396327758751
+missing: g_capital_expenditure,0.004561800450024998
+missing: g_cash_and_equivalents,0.004429435201097677
+missing: g_operating_income,0.004017331897581016
+missing: g_free_cash_flow,0.0034445457259321475
+missing: g_total_assets,0.0016619751750544046
+missing: g_operating_cash_flow,0.0014660237594725887
+missing: g_revenue,0.0014506637450333653
+missing: g_shareholders_equity,0.0004921122167947913

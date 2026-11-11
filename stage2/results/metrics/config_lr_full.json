@@ -1,0 +1,255 @@
+{
+  "experiment": "lr_full",
+  "model": "LogisticRegression",
+  "dataset": "full",
+  "input_features": [
+    "g_revenue",
+    "g_gross_profit",
+    "g_operating_income",
+    "g_net_income",
+    "g_eps_diluted",
+    "g_operating_cash_flow",
+    "g_capital_expenditure",
+    "g_total_assets",
+    "g_total_liabilities",
+    "g_shareholders_equity",
+    "g_cash_and_equivalents",
+    "g_free_cash_flow",
+    "ret_stock_1w",
+    "ret_spy_1w",
+    "ret_qqq_1w",
+    "ret_dow_1w",
+    "eps_surprise",
+    "analyst_grade"
+  ],
+  "model_features_after_preprocessing": [
+    "g_revenue",
+    "g_gross_profit",
+    "g_operating_income",
+    "g_net_income",
+    "g_eps_diluted",
+    "g_operating_cash_flow",
+    "g_capital_expenditure",
+    "g_total_assets",
+    "g_total_liabilities",
+    "g_shareholders_equity",
+    "g_cash_and_equivalents",
+    "g_free_cash_flow",
+    "missing: g_revenue",
+    "missing: g_gross_profit",
+    "missing: g_operating_income",
+    "missing: g_net_income",
+    "missing: g_eps_diluted",
+    "missing: g_operating_cash_flow",
+    "missing: g_capital_expenditure",
+    "missing: g_total_assets",
+    "missing: g_total_liabilities",
+    "missing: g_shareholders_equity",
+    "missing: g_cash_and_equivalents",
+    "missing: g_free_cash_flow",
+    "eps_surprise",
+    "ret_stock_1w",
+    "ret_spy_1w",
+    "ret_qqq_1w",
+    "ret_dow_1w",
+    "analyst_grade=buy",
+    "analyst_grade=hold",
+    "analyst_grade=none",
+    "analyst_grade=sell"
+  ],
+  "n_train": 6387,
+  "n_val": 938,
+  "n_test": 946,
+  "grid": [
+    {
+      "C": 0.001,
+      "class_weight": "None"
+    },
+    {
+      "C": 0.01,
+      "class_weight": "None"
+    },
+    {
+      "C": 0.1,
+      "class_weight": "None"
+    },
+    {
+      "C": 1.0,
+      "class_weight": "None"
+    },
+    {
+      "C": 10.0,
+      "class_weight": "None"
+    },
+    {
+      "C": 0.001,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 0.01,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 1.0,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 10.0,
+      "class_weight": "balanced"
+    }
+  ],
+  "selection": "max validation ROC-AUC (test never used)",
+  "selected_params": {
+    "C": 0.001,
+    "class_weight": "None"
+  },
+  "fixed_params": {
+    "C": 0.001,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 2000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threshold": 0.5,
+  "seed": 42,
+  "search": [
+    {
+      "C": 0.001,
+      "class_weight": "None",
+      "val_auc": 0.49198592918052536,
+      "val_accuracy": 0.4978678038379531,
+      "val_share_pred_long": 0.464818763326226
+    },
+    {
+      "C": 0.01,
+      "class_weight": "None",
+      "val_auc": 0.48710403007614844,
+      "val_accuracy": 0.4936034115138593,
+      "val_share_pred_long": 0.5287846481876333
+    },
+    {
+      "C": 0.1,
+      "class_weight": "None",
+      "val_auc": 0.486136775300328,
+      "val_accuracy": 0.5042643923240938,
+      "val_share_pred_long": 0.5074626865671642
+    },
+    {
+      "C": 1.0,
+      "class_weight": "None",
+      "val_auc": 0.48638771403933806,
+      "val_accuracy": 0.4968017057569296,
+      "val_share_pred_long": 0.4978678038379531
+    },
+    {
+      "C": 10.0,
+      "class_weight": "None",
+      "val_auc": 0.48639227656186557,
+      "val_accuracy": 0.4957356076759062,
+      "val_share_pred_long": 0.4968017057569296
+    },
+    {
+      "C": 0.001,
+      "class_weight": "balanced",
+      "val_auc": 0.4918490535047017,
+      "val_accuracy": 0.4946695095948827,
+      "val_share_pred_long": 0.6044776119402985
+    },
+    {
+      "C": 0.01,
+      "class_weight": "balanced",
+      "val_auc": 0.48712684268878575,
+      "val_accuracy": 0.47867803837953093,
+      "val_share_pred_long": 0.5948827292110874
+    },
+    {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "val_auc": 0.48622802575087715,
+      "val_accuracy": 0.47867803837953093,
+      "val_share_pred_long": 0.582089552238806
+    },
+    {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "val_auc": 0.4865337147602167,
+      "val_accuracy": 0.47761194029850745,
+      "val_share_pred_long": 0.5724946695095949
+    },
+    {
+      "C": 10.0,
+      "class_weight": "balanced",
+      "val_auc": 0.4865154646701068,
+      "val_accuracy": 0.47867803837953093,
+      "val_share_pred_long": 0.5714285714285714
+    }
+  ],
+  "metrics": {
+    "train": {
+      "accuracy": 0.5318615938625333,
+      "precision_long": 0.5336746750689247,
+      "recall_long": 0.4286618158810503,
+      "f1_weighted": 0.5269004538618333,
+      "mcc": 0.06297747010859663,
+      "roc_auc": 0.541455231762336,
+      "log_loss": 0.6904343637310778,
+      "brier": 0.24866148511446967,
+      "share_pred_long": 0.39752622514482544,
+      "tn": 2042,
+      "fp": 1184,
+      "fn": 1806,
+      "tp": 1355
+    },
+    "val": {
+      "accuracy": 0.4978678038379531,
+      "precision_long": 0.46559633027522934,
+      "recall_long": 0.4603174603174603,
+      "f1_weighted": 0.4976929992502075,
+      "mcc": -0.008501334103446502,
+      "roc_auc": 0.49198592918052536,
+      "log_loss": 0.6947162344930784,
+      "brier": 0.25077848078729276,
+      "share_pred_long": 0.464818763326226,
+      "tn": 264,
+      "fp": 233,
+      "fn": 238,
+      "tp": 203
+    },
+    "test": {
+      "accuracy": 0.5391120507399577,
+      "precision_long": 0.5348837209302325,
+      "recall_long": 0.3522975929978118,
+      "f1_weighted": 0.5233868738194688,
+      "mcc": 0.07080875214202109,
+      "roc_auc": 0.5231146491969947,
+      "log_loss": 0.6913634078380669,
+      "brier": 0.24911975991971627,
+      "share_pred_long": 0.3181818181818182,
+      "tn": 349,
+      "fp": 140,
+      "fn": 296,
+      "tp": 161
+    }
+  },
+  "preprocessing": "signed log on growth + eps_surprise; train-median imputation + missing flags on growth; one-hot analyst_grade; StandardScaler; all fitted on train only",
+  "versions": {
+    "python": "3.13.7",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  }
+}

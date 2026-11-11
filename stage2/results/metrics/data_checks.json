@@ -1,0 +1,203 @@
+{
+  "base": {
+    "dataset": "base",
+    "duplicate_event_ids": 0,
+    "infinite_values": 0,
+    "missing_pct": {
+      "train": {
+        "g_revenue": 2.35,
+        "g_gross_profit": 60.11,
+        "g_operating_income": 21.76,
+        "g_net_income": 0.33,
+        "g_eps_diluted": 20.65,
+        "g_operating_cash_flow": 0.52,
+        "g_capital_expenditure": 13.68,
+        "g_total_assets": 0.47,
+        "g_total_liabilities": 32.72,
+        "g_shareholders_equity": 0.16,
+        "g_cash_and_equivalents": 0.88,
+        "g_free_cash_flow": 13.64
+      },
+      "val": {
+        "g_revenue": 1.92,
+        "g_gross_profit": 62.69,
+        "g_operating_income": 21.64,
+        "g_net_income": 0.21,
+        "g_eps_diluted": 11.19,
+        "g_operating_cash_flow": 0.64,
+        "g_capital_expenditure": 14.61,
+        "g_total_assets": 0.96,
+        "g_total_liabilities": 31.88,
+        "g_shareholders_equity": 0.32,
+        "g_cash_and_equivalents": 0.96,
+        "g_free_cash_flow": 14.71
+      },
+      "test": {
+        "g_revenue": 2.33,
+        "g_gross_profit": 61.84,
+        "g_operating_income": 22.09,
+        "g_net_income": 0.42,
+        "g_eps_diluted": 40.27,
+        "g_operating_cash_flow": 0.63,
+        "g_capital_expenditure": 14.8,
+        "g_total_assets": 0.32,
+        "g_total_liabilities": 30.44,
+        "g_shareholders_equity": 0.21,
+        "g_cash_and_equivalents": 0.85,
+        "g_free_cash_flow": 14.8
+      }
+    },
+    "constant_columns_train": [],
+    "label_in_features": false,
+    "identifier_in_features": false,
+    "high_corr_pairs_train_abs_gt_0.9": [
+      [
+        "g_total_assets",
+        "g_total_liabilities",
+        0.905
+      ],
+      [
+        "missing: g_capital_expenditure",
+        "missing: g_free_cash_flow",
+        0.994
+      ]
+    ],
+    "n_model_features": 24,
+    "model_features": [
+      "g_revenue",
+      "g_gross_profit",
+      "g_operating_income",
+      "g_net_income",
+      "g_eps_diluted",
+      "g_operating_cash_flow",
+      "g_capital_expenditure",
+      "g_total_assets",
+      "g_total_liabilities",
+      "g_shareholders_equity",
+      "g_cash_and_equivalents",
+      "g_free_cash_flow",
+      "missing: g_revenue",
+      "missing: g_gross_profit",
+      "missing: g_operating_income",
+      "missing: g_net_income",
+      "missing: g_eps_diluted",
+      "missing: g_operating_cash_flow",
+      "missing: g_capital_expenditure",
+      "missing: g_total_assets",
+      "missing: g_total_liabilities",
+      "missing: g_shareholders_equity",
+      "missing: g_cash_and_equivalents",
+      "missing: g_free_cash_flow"
+    ]
+  },
+  "full": {
+    "dataset": "full",
+    "duplicate_event_ids": 0,
+    "infinite_values": 0,
+    "missing_pct": {
+      "train": {
+        "g_revenue": 2.35,
+        "g_gross_profit": 60.11,
+        "g_operating_income": 21.76,
+        "g_net_income": 0.33,
+        "g_eps_diluted": 20.65,
+        "g_operating_cash_flow": 0.52,
+        "g_capital_expenditure": 13.68,
+        "g_total_assets": 0.47,
+        "g_total_liabilities": 32.72,
+        "g_shareholders_equity": 0.16,
+        "g_cash_and_equivalents": 0.88,
+        "g_free_cash_flow": 13.64
+      },
+      "val": {
+        "g_revenue": 1.92,
+        "g_gross_profit": 62.69,
+        "g_operating_income": 21.64,
+        "g_net_income": 0.21,
+        "g_eps_diluted": 11.19,
+        "g_operating_cash_flow": 0.64,
+        "g_capital_expenditure": 14.61,
+        "g_total_assets": 0.96,
+        "g_total_liabilities": 31.88,
+        "g_shareholders_equity": 0.32,
+        "g_cash_and_equivalents": 0.96,
+        "g_free_cash_flow": 14.71
+      },
+      "test": {
+        "g_revenue": 2.33,
+        "g_gross_profit": 61.84,
+        "g_operating_income": 22.09,
+        "g_net_income": 0.42,
+        "g_eps_diluted": 40.27,
+        "g_operating_cash_flow": 0.63,
+        "g_capital_expenditure": 14.8,
+        "g_total_assets": 0.32,
+        "g_total_liabilities": 30.44,
+        "g_shareholders_equity": 0.21,
+        "g_cash_and_equivalents": 0.85,
+        "g_free_cash_flow": 14.8
+      }
+    },
+    "constant_columns_train": [],
+    "label_in_features": false,
+    "identifier_in_features": false,
+    "high_corr_pairs_train_abs_gt_0.9": [
+      [
+        "g_total_assets",
+        "g_total_liabilities",
+        0.905
+      ],
+      [
+        "missing: g_capital_expenditure",
+        "missing: g_free_cash_flow",
+        0.994
+      ],
+      [
+        "ret_spy_1w",
+        "ret_qqq_1w",
+        0.921
+      ],
+      [
+        "ret_spy_1w",
+        "ret_dow_1w",
+        0.933
+      ]
+    ],
+    "n_model_features": 33,
+    "model_features": [
+      "g_revenue",
+      "g_gross_profit",
+      "g_operating_income",
+      "g_net_income",
+      "g_eps_diluted",
+      "g_operating_cash_flow",
+      "g_capital_expenditure",
+      "g_total_assets",
+      "g_total_liabilities",
+      "g_shareholders_equity",
+      "g_cash_and_equivalents",
+      "g_free_cash_flow",
+      "missing: g_revenue",
+      "missing: g_gross_profit",
+      "missing: g_operating_income",
+      "missing: g_net_income",
+      "missing: g_eps_diluted",
+      "missing: g_operating_cash_flow",
+      "missing: g_capital_expenditure",
+      "missing: g_total_assets",
+      "missing: g_total_liabilities",
+      "missing: g_shareholders_equity",
+      "missing: g_cash_and_equivalents",
+      "missing: g_free_cash_flow",
+      "eps_surprise",
+      "ret_stock_1w",
+      "ret_spy_1w",
+      "ret_qqq_1w",
+      "ret_dow_1w",
+      "analyst_grade=buy",
+      "analyst_grade=hold",
+      "analyst_grade=none",
+      "analyst_grade=sell"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "source": "stage1\\1_data\\llm_data.jsonl.gz",
+  "events": 8271,
+  "unique_event_ids": 8271,
+  "unparsed_lines": 0,
+  "analyst_window_days": [
+    30
+  ],
+  "split_counts": {
+    "test": {
+      "Long": 457,
+      "Short": 489
+    },
+    "train": {
+      "Long": 3161,
+      "Short": 3226
+    },
+    "val": {
+      "Long": 441,
+      "Short": 497
+    }
+  },
+  "train_dates": [
+    "2020-01-03",
+    "2023-06-30"
+  ],
+  "val_dates": [
+    "2023-07-13",
+    "2023-12-21"
+  ],
+  "test_dates": [
+    "2024-01-04",
+    "2024-06-27"
+  ],
+  "n_growth_metrics_per_event": {
+    "count": 8271.0,
+    "mean": 10.31,
+    "std": 1.38,
+    "min": 3.0,
+    "25%": 10.0,
+    "50%": 11.0,
+    "75%": 11.0,
+    "max": 12.0
+  },
+  "analyst_grade_share": {
+    "buy": 0.4551,
+    "hold": 0.2741,
+    "none": 0.2326,
+    "sell": 0.0382
+  }
+}

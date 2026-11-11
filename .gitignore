@@ -1,0 +1,47 @@
+# Python / environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*credentials*.json
+*.pem
+# Datasets and downloads
+*.zip
+*.gz
+stage1/1_data/*
+!stage1/1_data/README.md
+stage1/2_code/dataset_builder/data/
+stage2/data/stage2_*_numeric.csv
+# Model artifacts and training outputs
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.joblib
+stage1/8_trained_adapter/
+checkpoint*/
+checkpoints*/
+adapter_*/
+wandb/
+runs/
+logs/
+*.log
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

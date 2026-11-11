@@ -1,0 +1,200 @@
+{
+  "experiment": "rf_base",
+  "model": "RandomForestClassifier",
+  "dataset": "base",
+  "input_features": [
+    "g_revenue",
+    "g_gross_profit",
+    "g_operating_income",
+    "g_net_income",
+    "g_eps_diluted",
+    "g_operating_cash_flow",
+    "g_capital_expenditure",
+    "g_total_assets",
+    "g_total_liabilities",
+    "g_shareholders_equity",
+    "g_cash_and_equivalents",
+    "g_free_cash_flow"
+  ],
+  "model_features_after_preprocessing": [
+    "g_revenue",
+    "g_gross_profit",
+    "g_operating_income",
+    "g_net_income",
+    "g_eps_diluted",
+    "g_operating_cash_flow",
+    "g_capital_expenditure",
+    "g_total_assets",
+    "g_total_liabilities",
+    "g_shareholders_equity",
+    "g_cash_and_equivalents",
+    "g_free_cash_flow",
+    "missing: g_revenue",
+    "missing: g_gross_profit",
+    "missing: g_operating_income",
+    "missing: g_net_income",
+    "missing: g_eps_diluted",
+    "missing: g_operating_cash_flow",
+    "missing: g_capital_expenditure",
+    "missing: g_total_assets",
+    "missing: g_total_liabilities",
+    "missing: g_shareholders_equity",
+    "missing: g_cash_and_equivalents",
+    "missing: g_free_cash_flow"
+  ],
+  "n_train": 6387,
+  "n_val": 938,
+  "n_test": 946,
+  "grid": [
+    {
+      "max_depth": 5,
+      "class_weight": "None"
+    },
+    {
+      "max_depth": 10,
+      "class_weight": "None"
+    },
+    {
+      "max_depth": "None",
+      "class_weight": "None"
+    },
+    {
+      "max_depth": 5,
+      "class_weight": "balanced"
+    },
+    {
+      "max_depth": 10,
+      "class_weight": "balanced"
+    },
+    {
+      "max_depth": "None",
+      "class_weight": "balanced"
+    }
+  ],
+  "selection": "max validation ROC-AUC (test never used)",
+  "selected_params": {
+    "max_depth": 5,
+    "class_weight": "balanced"
+  },
+  "fixed_params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": 5,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 5,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 200,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threshold": 0.5,
+  "seed": 42,
+  "search": [
+    {
+      "max_depth": 5,
+      "class_weight": "None",
+      "val_auc": 0.5195367214625622,
+      "val_accuracy": 0.5191897654584222,
+      "val_share_pred_long": 0.40298507462686567
+    },
+    {
+      "max_depth": 10,
+      "class_weight": "None",
+      "val_auc": 0.5141940075829124,
+      "val_accuracy": 0.511727078891258,
+      "val_share_pred_long": 0.4445628997867804
+    },
+    {
+      "max_depth": "None",
+      "class_weight": "None",
+      "val_auc": 0.507861226314805,
+      "val_accuracy": 0.5127931769722814,
+      "val_share_pred_long": 0.4690831556503198
+    },
+    {
+      "max_depth": 5,
+      "class_weight": "balanced",
+      "val_auc": 0.5207047272295906,
+      "val_accuracy": 0.5,
+      "val_share_pred_long": 0.5287846481876333
+    },
+    {
+      "max_depth": 10,
+      "class_weight": "balanced",
+      "val_auc": 0.5156631398367529,
+      "val_accuracy": 0.5202558635394456,
+      "val_share_pred_long": 0.5085287846481876
+    },
+    {
+      "max_depth": "None",
+      "class_weight": "balanced",
+      "val_auc": 0.5164296436213653,
+      "val_accuracy": 0.5245202558635395,
+      "val_share_pred_long": 0.4957356076759062
+    }
+  ],
+  "metrics": {
+    "train": {
+      "accuracy": 0.6300297479254736,
+      "precision_long": 0.6203256936067552,
+      "recall_long": 0.6507434356216387,
+      "f1_weighted": 0.6299032062959508,
+      "mcc": 0.2606552004825454,
+      "roc_auc": 0.6918605415152472,
+      "log_loss": 0.6783519240143179,
+      "brier": 0.2426233877555345,
+      "share_pred_long": 0.5191795835290434,
+      "tn": 1967,
+      "fp": 1259,
+      "fn": 1104,
+      "tp": 2057
+    },
+    "val": {
+      "accuracy": 0.5,
+      "precision_long": 0.4717741935483871,
+      "recall_long": 0.5306122448979592,
+      "f1_weighted": 0.5000312555762789,
+      "mcc": 0.003448834334829786,
+      "roc_auc": 0.5207047272295906,
+      "log_loss": 0.69249442335424,
+      "brier": 0.2496723549125893,
+      "share_pred_long": 0.5287846481876333,
+      "tn": 235,
+      "fp": 262,
+      "fn": 207,
+      "tp": 234
+    },
+    "test": {
+      "accuracy": 0.5232558139534884,
+      "precision_long": 0.5064935064935064,
+      "recall_long": 0.5120350109409191,
+      "f1_weighted": 0.5233277904697163,
+      "mcc": 0.045763521448600686,
+      "roc_auc": 0.5221234780040542,
+      "log_loss": 0.6926397271587725,
+      "brier": 0.24974437622641354,
+      "share_pred_long": 0.4883720930232558,
+      "tn": 261,
+      "fp": 228,
+      "fn": 223,
+      "tp": 234
+    }
+  },
+  "preprocessing": "signed log on growth + eps_surprise; train-median imputation + missing flags on growth; one-hot analyst_grade; StandardScaler; all fitted on train only",
+  "versions": {
+    "python": "3.13.7",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  }
+}

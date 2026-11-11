@@ -1,0 +1,240 @@
+{
+  "experiment": "lr_base",
+  "model": "LogisticRegression",
+  "dataset": "base",
+  "input_features": [
+    "g_revenue",
+    "g_gross_profit",
+    "g_operating_income",
+    "g_net_income",
+    "g_eps_diluted",
+    "g_operating_cash_flow",
+    "g_capital_expenditure",
+    "g_total_assets",
+    "g_total_liabilities",
+    "g_shareholders_equity",
+    "g_cash_and_equivalents",
+    "g_free_cash_flow"
+  ],
+  "model_features_after_preprocessing": [
+    "g_revenue",
+    "g_gross_profit",
+    "g_operating_income",
+    "g_net_income",
+    "g_eps_diluted",
+    "g_operating_cash_flow",
+    "g_capital_expenditure",
+    "g_total_assets",
+    "g_total_liabilities",
+    "g_shareholders_equity",
+    "g_cash_and_equivalents",
+    "g_free_cash_flow",
+    "missing: g_revenue",
+    "missing: g_gross_profit",
+    "missing: g_operating_income",
+    "missing: g_net_income",
+    "missing: g_eps_diluted",
+    "missing: g_operating_cash_flow",
+    "missing: g_capital_expenditure",
+    "missing: g_total_assets",
+    "missing: g_total_liabilities",
+    "missing: g_shareholders_equity",
+    "missing: g_cash_and_equivalents",
+    "missing: g_free_cash_flow"
+  ],
+  "n_train": 6387,
+  "n_val": 938,
+  "n_test": 946,
+  "grid": [
+    {
+      "C": 0.001,
+      "class_weight": "None"
+    },
+    {
+      "C": 0.01,
+      "class_weight": "None"
+    },
+    {
+      "C": 0.1,
+      "class_weight": "None"
+    },
+    {
+      "C": 1.0,
+      "class_weight": "None"
+    },
+    {
+      "C": 10.0,
+      "class_weight": "None"
+    },
+    {
+      "C": 0.001,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 0.01,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 1.0,
+      "class_weight": "balanced"
+    },
+    {
+      "C": 10.0,
+      "class_weight": "balanced"
+    }
+  ],
+  "selection": "max validation ROC-AUC (test never used)",
+  "selected_params": {
+    "C": 0.001,
+    "class_weight": "None"
+  },
+  "fixed_params": {
+    "C": 0.001,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 2000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threshold": 0.5,
+  "seed": 42,
+  "search": [
+    {
+      "C": 0.001,
+      "class_weight": "None",
+      "val_auc": 0.5129256263202799,
+      "val_accuracy": 0.5170575692963753,
+      "val_share_pred_long": 0.37100213219616207
+    },
+    {
+      "C": 0.01,
+      "class_weight": "None",
+      "val_auc": 0.5084041664955721,
+      "val_accuracy": 0.511727078891258,
+      "val_share_pred_long": 0.3997867803837953
+    },
+    {
+      "C": 0.1,
+      "class_weight": "None",
+      "val_auc": 0.5072772234312908,
+      "val_accuracy": 0.509594882729211,
+      "val_share_pred_long": 0.3997867803837953
+    },
+    {
+      "C": 1.0,
+      "class_weight": "None",
+      "val_auc": 0.5071585978455768,
+      "val_accuracy": 0.511727078891258,
+      "val_share_pred_long": 0.40191897654584224
+    },
+    {
+      "C": 10.0,
+      "class_weight": "None",
+      "val_auc": 0.5072772234312908,
+      "val_accuracy": 0.509594882729211,
+      "val_share_pred_long": 0.40191897654584224
+    },
+    {
+      "C": 0.001,
+      "class_weight": "balanced",
+      "val_auc": 0.5129119387526976,
+      "val_accuracy": 0.5191897654584222,
+      "val_share_pred_long": 0.4968017057569296
+    },
+    {
+      "C": 0.01,
+      "class_weight": "balanced",
+      "val_auc": 0.5084269791082094,
+      "val_accuracy": 0.5053304904051172,
+      "val_share_pred_long": 0.4957356076759062
+    },
+    {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "val_auc": 0.5073045985664555,
+      "val_accuracy": 0.5159914712153518,
+      "val_share_pred_long": 0.48720682302771856
+    },
+    {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "val_auc": 0.5072224731609613,
+      "val_accuracy": 0.5149253731343284,
+      "val_share_pred_long": 0.488272921108742
+    },
+    {
+      "C": 10.0,
+      "class_weight": "balanced",
+      "val_auc": 0.5072954735214005,
+      "val_accuracy": 0.5159914712153518,
+      "val_share_pred_long": 0.48720682302771856
+    }
+  ],
+  "metrics": {
+    "train": {
+      "accuracy": 0.5193361515578518,
+      "precision_long": 0.5197912135711179,
+      "recall_long": 0.378044922492882,
+      "f1_weighted": 0.509718238197102,
+      "mcc": 0.037317386715846,
+      "roc_auc": 0.5337082464074617,
+      "log_loss": 0.6910697617622708,
+      "brier": 0.2489791769496534,
+      "share_pred_long": 0.3599498982307813,
+      "tn": 2122,
+      "fp": 1104,
+      "fn": 1966,
+      "tp": 1195
+    },
+    "val": {
+      "accuracy": 0.5170575692963753,
+      "precision_long": 0.4827586206896552,
+      "recall_long": 0.38095238095238093,
+      "f1_weighted": 0.5092546335034404,
+      "mcc": 0.01940270359307349,
+      "roc_auc": 0.5129256263202799,
+      "log_loss": 0.6931696480961409,
+      "brier": 0.250005186710605,
+      "share_pred_long": 0.37100213219616207,
+      "tn": 317,
+      "fp": 180,
+      "fn": 273,
+      "tp": 168
+    },
+    "test": {
+      "accuracy": 0.5169133192389006,
+      "precision_long": 0.5,
+      "recall_long": 0.33260393873085337,
+      "f1_weighted": 0.5010263534184808,
+      "mcc": 0.023290388387261142,
+      "roc_auc": 0.526808607751272,
+      "log_loss": 0.6914011839631033,
+      "brier": 0.24913648591936352,
+      "share_pred_long": 0.321353065539112,
+      "tn": 337,
+      "fp": 152,
+      "fn": 305,
+      "tp": 152
+    }
+  },
+  "preprocessing": "signed log on growth + eps_surprise; train-median imputation + missing flags on growth; one-hot analyst_grade; StandardScaler; all fitted on train only",
+  "versions": {
+    "python": "3.13.7",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  }
+}

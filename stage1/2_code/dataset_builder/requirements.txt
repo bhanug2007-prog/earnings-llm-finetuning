@@ -1,0 +1,9 @@
+# Google Colab already has most of these; run:  pip install -U -r requirements.txt
+pandas>=2.1
+numpy
+requests
+pyarrow
+huggingface_hub
+yfinance>=0.2.66
+beautifulsoup4
+lxml
